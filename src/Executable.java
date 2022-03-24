@@ -5,7 +5,7 @@ public class Executable {
 
 	// Constants
 	private static final int MIN_USERS = 2;
-	public static final int MAX_USERS = 193;
+	public static final int MAX_USERS = 11;
 
 
 	/**
@@ -23,7 +23,7 @@ public class Executable {
 
 
 
-		/* ######################### One access point - RR ######################### */
+		/* ######################### One access point - RR ######################### 
 		// Init the world
 		world.init(World.RR_ALLOCATION_ALGORITHM);
 
@@ -41,7 +41,7 @@ public class Executable {
 			// Launch the simulation on the world with this number of users
 			world.bootstrap(nb_users);
 		}
-
+*/
 
 
 		/* ######################### One access point - MaxSNR ######################### */
@@ -65,7 +65,7 @@ public class Executable {
 
 
 
-		/* ######################### Two access points - RR ######################### */
+		/* ######################### Two access points - RR ######################### 
 		// Init the world
 		world.init(World.RR_ALLOCATION_ALGORITHM);
 
@@ -87,10 +87,10 @@ public class Executable {
 			// Launch the simulation on the world with this number of users
 			world.bootstrap(nb_users);
 		}
+*/
 
 
-
-		/* ######################### Two access points - MaxSNR ######################### */
+		/* ######################### Two access points - MaxSNR ######################### 
 		// Init the world
 		world.init(World.MAX_SNR_ALLOCATION_ALGORITHM);
 
@@ -112,6 +112,6 @@ public class Executable {
 			// Launch the simulation on the world with this number of users
 			world.bootstrap(nb_users);
 		}
-
+*/
 	}
 }

@@ -16,6 +16,7 @@ public class User {
 	private Deque<Packet> buffer;
 	private int debitMoy;
 	private int debitCurrent;
+	private Random rand;
 
 
 	/**
@@ -29,12 +30,12 @@ public class User {
 		this.accessPoint = accessPoint;
 		this.near = near;
 		this.packet_send = new ArrayList<Packet>();;
+		rand = new Random();
 		buffer = new LinkedList<Packet>();
 		if(near) {
-			debitMoy = 6;
-		}
-		else {
-			debitMoy = 3;
+			debitMoy = rand.nextInt(20 - 0);
+		}else {
+			debitMoy = rand.nextInt(12 - 0);
 		}
 	}
 

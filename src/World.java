@@ -162,7 +162,10 @@ public class World {
 
 			// Put their AP iterators into the list
 			urs.add(ap.getUr());
+			
+			//ap.userCreatePacket();
 		}
+		
 
 		// Loop on the time
 		while (time < MAX_TIME) {

@@ -54,7 +54,9 @@ public class AccessPoint {
 	 * This function randomly create packets, not always
 	 */
 	public void userCreatePacket() {
-		for (User u : this.users) u.createPacket();
+		for (User u : this.users) {
+				u.createPacket();
+		}
 	}
 
 
